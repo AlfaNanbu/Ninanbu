@@ -2,11 +2,11 @@
 
 16/04/2017
 =============
-*Se crea el repositorio con los siguientes archivos:
-  -Folder css / js / image.
-  -File "index.html".
-  -File "GNU General Public License v3.0".
-  -File "README".
+*Se crea el repositorio con los siguientes archivos:<br>
+   -Folder css / js / image<br>
+  -File index.html<br>
+  -File GNU General Public License v3.0<br>
+  -File "README"<br>
   
 
 
