@@ -32,26 +32,6 @@ span
   margin-right: 10px;
 }
 
-.block-model
-{
-  display: block;
-}
-
-.row-model
-{
-  display: flex;
-  flex-flow: row;
-
-  text-align: center;
-
-  align-items: center;
-}
-
-.row-model:nth-child(even)
-{
-  flex-flow: row-reverse;
-}
-
 .main
 {
   margin-top: 80px;
@@ -63,7 +43,40 @@ span
   text-align: center;
 }
 
-.fixed-position
+.image-150px
+{
+  height: 150px;
+  width: 150px;
+
+
+  border-radius: 50%;
+  padding-top: 15px;
+}
+
+.block-model
+{
+  display: block;
+}
+
+.row-model
+{
+  display: flex;
+  flex-flow: row;
+}
+
+.row-model:nth-child(even)
+{
+  flex-flow: row-reverse;
+}
+
+
+.aling-content
+{
+  text-align: center;
+  align-items: center;
+}
+
+.nav-fixed
 {
   position: fixed;
   top: 0;
@@ -88,34 +101,36 @@ span
   height: 60px;
 }
 
-
-.content-order-row
+.border-radius-full
 {
-  font-size: 50px;
-
-  order: 2;
+  border-radius: 15px;
 }
 
-p.content-order-row
+.titulos-medios
 {
-  margin: 0;
+  color: white;
+  font-weight: bold;
+
+  text-align: center;
 }
 
-.image-order-row
+.centrado
 {
-  order: 1;
+  justify-content: center;
 }
 
-.image-250px
+.space-around
 {
-  height: 150px;
-  width: 150px;
-
-
-  border-radius: 50%;
-  padding-top: 15px;
-
+  justify-content: space-around;
 }
+
+.padding-1
+{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*==============Lista de estilos de colores==============*/
 
 .style-1
 {
@@ -147,57 +162,6 @@ p.content-order-row
   background-color: #b94a48;
 }
 
-.border-radius-1-top
-{
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px
-}
-
-.border-radius-1-bottom
-{
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px
-}
-
-.border-radius-full
-{
-  border-radius: 15px;
-}
-
-.titulos-medios
-{
-  color: white;
-  font-weight: bold;
-
-  text-align: center;
-}
-
-.centrado
-{
-  justify-content: center;
-}
-
-.space-around
-{
-  justify-content: space-around;
-}
-
-.centrado-1
-{
-  text-align: center;
-}
-
-.padding-1
-{
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.shadow-box:hover
-{
-  box-shadow: 0px 0px 5px grey;
-}
-
 /*-------------------Identificadores Generales----------------*/
 
 #nanbu
@@ -213,7 +177,6 @@ p.content-order-row
   flex: 1 1 auto;
   order: 2;
 }
-
 
 #blog
 {
@@ -232,6 +195,7 @@ p.content-order-row
   background-color: #3a87ad;
 }
 
+
 #pie-pagina
 {
   display: flex;
@@ -247,12 +211,12 @@ p.content-order-row
   color: white;
 }
 
+
 #pie-2
 {
   flex: 1 1 40%;
   order: 2;
 }
-
 
 #presentacion
 {
@@ -265,7 +229,7 @@ p.content-order-row
 
 
 
-
+/*=======================Responsive=====================*/
 
 
  @media only screen and (max-width: 700px)
