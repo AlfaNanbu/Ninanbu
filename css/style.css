@@ -1,273 +1,120 @@
-/*--------------------Lista de cambios Generales-------------*/
+/*==== Configuracion Inicial ====*/
+  html{font-size: 18px; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;line-height:inherit;}
+  body{margin: 0;background-color: #555;}
+  a{ text-decoration:none;color:white;}
+  li{list-style: none;}
+  span{font-weight: bold;}
 
-body
-{
-  margin: 0;
-  background-color: #555;
-}
+  /*====Clases Generales====*/
+  .titulos-medios{color: white;font-weight: bold;text-align: center;}
+  .row-model{display:flex;flex-direction:row;}
+  .mar-lr{margin-left:10px;margin-right:10px;}
 
-a
-{
-  text-decoration: none;
-  color: white;
-}
 
-li
-{
-  list-style: none;
-}
 
-span
-{
-  font-weight: bold;
-}
+/*====Menu Navegacion*/
+  .nav-fixed{position: fixed;top: 0;background-color: #222;width: 100%;color: white;margin:-10px;}
+  .nav{display: flex;flex-flow: row;align-items: center;height: 60px;}
 
+  /*====ID Menu Navegacion*/
+  #nanbu{flex:1 70%;order:1;padding-left:20px;}
+  #inicio{flex:1 auto;order:2;}
+  #blog{ flex:1 auto;order:3;}
+  #inicio:hover{background-color: #3a87ad;}
+  #blog:hover{background-color: #3a87ad;}
 
-/* -------------------Lista de clases generales -------------*/
 
-.container
-{
-  display: block;
-  margin-left: 10px;
-  margin-right: 10px;
-}
 
-.main
-{
-  margin-top: 80px;
+/*====Seccion Main====*/
+  .presentacion{padding: 30px;}
+  .main{margin-top:80px;background-color:#f89406;border-radius:15px;text-align:center;}
 
-  background-color: #f89406;
+  /*==== Media@Main ====*/
 
-  border-radius: 15px;
+  /*Nose poque no me lo toma desde aca :(*/
 
-  text-align: center;
-}
 
-.image-150px
-{
-  height: 150px;
-  width: 150px;
 
+/*====Seccion About====*/
+  .style-2{background-color:#468847;border-radius:15px;}
+  /*====Foto+Redes====*/
+  .about-fr{background-color:#222;border-top-left-radius:15px;border-bottom-left-radius:15px;margin-right:15px;}
+  .jct-sparo{display: flex; justify-content: center;}
+  .img-250{width: 250px;height: 250px;border-radius: 15px;}
 
-  border-radius: 50%;
-  padding-top: 15px;
-}
+  /*====Texto Descriptivo====*/
+  .about-tx{text-align:left;margin-left:20px;padding: 20px 20px 20px 0px;}
 
-.block-model
-{
-  display: block;
-}
+  /*==== Media@About ====*/
+  @media only screen and (max-width: 700px)
+  {
+   .about-fr{border-top-right-radius: 15px;border-bottom-left-radius: 0px;width: 100%;}
+  }
 
-.row-model
-{
-  display: flex;
-  flex-flow: row;
-}
 
-.row-model:nth-child(even)
-{
-  flex-flow: row-reverse;
-}
 
+/*====Seccion Tecnologias====*/
 
-.aling-content
-{
-  text-align: center;
-  align-items: center;
-}
+  .cont-tec1{background-color: 	#3a87ad;border-radius: 15px;text-align: center;}
+  .cont-tec2{display: flex;flex-direction: row;justify-content: space-around;}
+  .cont-tec3{display: flex;flex-direction: row;justify-content: space-around;padding-top: 15px;}
+  .img-ico{width: 50px;height: 50px;}
+  .img-cent{display: flex; align-items: center;}
 
-.nav-fixed
-{
-  position: fixed;
-  top: 0;
+  /*====ID Menu Navegacion*/
+  #front{cursor: pointer;color: #fff;font-weight: bold;}
+  #back{cursor: pointer;color: #fff;font-weight: bold;}
+  #frame{cursor: pointer;color: #fff;font-weight: bold;}
 
-  background-color: #222;
+  /*==== Media@About ====*/
+  @media only screen and (max-width: 700px)
+  {
+    .cont-tec1{padding: 10px 20px 20px 20px;}
+  }
 
-  width: 100%;
 
-  color: white;
 
-  margin: -15px;
+/*====Seccion Proyectos ====*/
+  .style-5{background-color:#b94a48;border-radius:15px;}
+  .space-around{justify-content: space-around;}
 
-}
 
-.only-flex-row
-{
-  display: flex;
-  flex-flow: row;
 
-  align-items: center;
+/*====Contacto====*/
+  .contacto{background-color:#f89406;border-radius:15px;}
+  .pad-form{padding: 30px 0px 30px 30px;}
+  #alert{color: rgba(172, 38, 21, 0.87); font-size: 20px;font-weight: bold;}
 
-  height: 60px;
-}
-
-.border-radius-full
-{
-  border-radius: 15px;
-}
-
-.titulos-medios
-{
-  color: white;
-  font-weight: bold;
-
-  text-align: center;
-}
-
-.centrado
-{
-  justify-content: center;
-}
-
-.space-around
-{
-  justify-content: space-around;
-}
-
-.padding-1
-{
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
+/*==== Pie de Pagina ====*/
+  #pie-pagina{display: flex;flex-direction: row;text-align:center;
+  margin-top: 20px;margin-left:-10px;margin-right:-10px;
+  background-color: #222;color: white;}
+  #pie-2{flex: 1 1 40%;order: 2;}
 
-/*==============Lista de estilos de colores==============*/
 
-.style-1
-{
-  background-color: #46a546;
-}
 
-.style-2
-{
-  background-color: #468847;
-}
+/*==== Responsive Desing ====*/
 
-.style-3
-{
-  background-color: #c3325f;
-}
-
-.style-4
-{
-  background-color: #222;
-}
-
-.style-5
-{
-  background-color: #3a87ad;
-}
-
-.style-6
-{
-  background-color: #b94a48;
-}
-
-/*-------------------Identificadores Generales----------------*/
-
-#nanbu
-{
-  flex: 1 1 70%;
-  order: 1;
-
-  padding-left: 20px;
-}
-
-#inicio
-{
-  flex: 1 1 auto;
-  order: 2;
-}
-
-#blog
-{
-  flex: 1 1 auto;
-  order: 3;
-}
-
-
-#inicio:hover
-{
-  background-color: #3a87ad;
-}
-
-#blog:hover
-{
-  background-color: #3a87ad;
-}
-
-
-#pie-pagina
-{
-  display: flex;
-  flex-flow: row;
-  text-align: center;
-
-  margin-top: 100px;
-  margin-left: -10px;
-  margin-right: -10px;
-
-  background-color: #222;
-
-  color: white;
-}
-
-
-#pie-2
-{
-  flex: 1 1 40%;
-  order: 2;
-}
-
-#presentacion
-{
-  font-size: 20px;
-
-  padding-bottom: 30px;
-}
-
-
-
-
-
-/*=======================Responsive=====================*/
-
-
- @media only screen and (max-width: 700px)
-
+@media only screen and (max-width: 700px)
  {
-  .row-model
-  {
-    display: block;
-  }
+   .row-model{display: block;}
+   .only-flex-row{display: flex;flex-flow: row;height: 100px;
+    width: 100%;}
 
-  .only-flex-row
-  {
-    display: flex;
-    flex-flow: row;
+    .pad-form{padding: 30px 30px 30px 30px;}
 
-    height: 100px
-    width: 100%;
+    #presentacion{padding: 10px;}
+    .main{margin-top: 100px;}
 
-  }
+    #inicio
+    {
+      display: none;
+    }
 
-  #inicio
-  {
-    display: none;
-  }
+    #blog
+    {
+      order: 2;
+      padding-right: 10px;
+    }
 
-  #blog
-  {
-    order: 2;
-    padding-right: 10px;
-  }
-
-  #presentacion
-  {
-    padding: 10px;
-  }
-
-  .main
-  {
-    margin-top: 70px;
-  }
- }
+   }
