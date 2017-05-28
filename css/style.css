@@ -70,6 +70,7 @@
   @media only screen and (max-width: 700px)
   {
     .cont-tec1{padding: 10px 20px 20px 20px;}
+    .cont-tec2{display: block;}
   }
 
 
